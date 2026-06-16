@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DSCR Investor Qualifier | Walt Vieira, loanDepot</title>
-  <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a2b218395a221ced510fad7" data-source="WEB_USER"></script>
 <style>
   :root {
     --ld-navy: #1b1c5a;
@@ -99,13 +98,12 @@
   .scroll-cue { display:flex; align-items:center; justify-content:center; gap:8px; margin:20px 0 4px; color:var(--muted); font-size:14px; font-weight:500; }
 
   .lead-card { background:var(--paper); border:1px solid var(--line); border-radius:var(--r-lg); padding:24px; box-shadow:var(--shadow); }
-  .video-slot {
-    background:linear-gradient(160deg,#23245f,#15164b); border-radius:var(--r-md);
-    aspect-ratio:16/9; display:flex; flex-direction:column; align-items:center; justify-content:center;
-    gap:10px; text-align:center; margin-bottom:22px; color:#fff; position:relative; overflow:hidden;
+  .video-wrap {
+    position:relative; width:100%; padding-top:56.25%;
+    border-radius:var(--r-md); overflow:hidden; margin-bottom:22px;
+    background:#15164b; box-shadow:0 4px 20px rgba(27,28,90,0.12);
   }
-  .video-slot .play { width:62px; height:62px; border-radius:50%; background:var(--ld-green); color:var(--ld-navy-deep); display:flex; align-items:center; justify-content:center; font-size:26px; }
-  .video-slot .vtext { font-size:14px; color:rgba(255,255,255,0.85); max-width:300px; line-height:1.5; }
+  .video-wrap iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
   .lead-card h2 { font-size:20px; font-weight:700; margin:0 0 5px; letter-spacing:-0.3px; }
   .lead-card .intro { font-size:15px; color:var(--muted); margin:0 0 16px; }
   .lead-card .intro strong { color:var(--ink); }
@@ -140,6 +138,7 @@
   .site-footer { margin-top:34px; padding-top:22px; border-top:1px solid var(--line); text-align:center; }
   .ehl { width:30px; height:30px; margin:0 auto 10px; display:block; }
   .footer-id { font-size:11px; color:var(--faint); line-height:1.6; margin:0; }
+  .footer-id strong { color:var(--muted); font-weight:600; }
   .footer-id strong { color:var(--muted); font-weight:600; }
 
   @media (max-width:480px){
@@ -179,7 +178,7 @@
       <path d="M32 12 L52 28 L46 28 L46 50 L38 50 L38 36 L26 36 L26 50 L18 50 L18 28 L12 28 Z" fill="none" stroke="#8a8ba0" stroke-width="2.2" stroke-linejoin="round"/>
       <text x="32" y="60" font-size="7" fill="#8a8ba0" text-anchor="middle" font-family="Arial">EQUAL HOUSING</text>
     </svg>
-    <p class="footer-id"><strong>loanDepot.com, LLC</strong> &nbsp;NMLS #174457 &nbsp;|&nbsp; Walt Vieira, NMLS #289844<br>Equal Housing Lender</p>
+    <p class="footer-id"><strong>Walt Vieira</strong>, NMLS #289844 &nbsp;|&nbsp; loanDepot.com, LLC NMLS #174457 &nbsp;|&nbsp; Equal Housing Lender</p>
   </footer>
 </div>
 
@@ -300,7 +299,7 @@
     var lf=document.getElementById("leadform"); lf.style.display="block";
     lf.innerHTML=
       '<div class="lead-card">'
-      + '<div class="video-slot"><div class="play">&#9658;</div><div class="vtext">[ Video placeholder ]<br>Walt explains the DSCR program in 90 seconds</div></div>'
+      + '<div class="video-wrap"><iframe src="https://player.vimeo.com/video/1201572185?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Walt Vieira explains the DSCR program"></iframe></div>'
       + '<h2>See exactly what you qualify for</h2>'
       + '<p class="intro">Enter your details and Walt will personally send your DSCR breakdown — estimated loan amount, down payment, and next step — <strong>within 24 hours</strong>. No obligation, no credit pull to start.</p>'
       + '<div class="form-stack">'
@@ -374,6 +373,7 @@
   function esc(s){ return s.replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];}); }
 })();
 </script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a2b218395a221ced510fad7" data-source="WEB_USER"></script>
 </body>
 </html>
